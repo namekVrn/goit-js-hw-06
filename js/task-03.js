@@ -36,9 +36,10 @@ const images = [
 
 const elemGallery = document.querySelector('.gallery')
 elemGallery.classList.add('flex')
-const list = images.map((value)=>{              
+const getList = images.map((value)=>{              
   const img = document.createElement('img')
   img.src = value.url
+  img.alt = value.alt
   img.classList.add('.img__width')
   img.width = "300"
   img.style.margin = '10px'
