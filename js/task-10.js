@@ -9,15 +9,16 @@ const divBoxes = document.querySelector('#boxes')
 
 btnCreate.addEventListener('click', ter)
 function ter(){
-  createBox(inputNumber.value)
+  createBox(inputNumber.value, 10)
 }
-
-function createBox(valueInput){
+let countWidth = 30
+function createBox(valueInput, widthNumber){
   
   for(let i = 0; i <= valueInput -1; i+=1){
-    const box = document.createElement('div')
-    box.style.width = "30px"
-    box.style.height = "30px"
+    const box = document.createElement('div');
+    countWidth += 10;
+    box.style.width = countWidth+"px"
+    box.style.height = countWidth+"px"
     box.style.backgroundColor = getRandomHexColor()
     divBoxes.append(box)
   }
