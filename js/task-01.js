@@ -12,7 +12,3 @@ for(let iter of queryResult.totalNumberCategories){
     console.log(`Category: ${categoryName}\nElements: ${categoryLength}`)
 }
 
-class Test {
-
-    constructor(queryResult.totalNumberCategories, )
-}
