@@ -36,13 +36,9 @@ const images = [
 
 const elemGallery = document.querySelector('.gallery')
 elemGallery.classList.add('flex')
-const getList = images.map((value)=>{              
-  const img = document.createElement('img')
-  img.src = value.url
-  img.alt = value.alt
-  img.classList.add('.img__width')
-  img.width = "300"
-  img.style.margin = '10px'
-  elemGallery.append(img)
+
+const getList = images.map((value)=>{ 
+  const img = `<li class="list"><img class="img__width" src="${value.url}" alt="${value.alt}"></li>`             
+  elemGallery.insertAdjacentHTML('beforeend', img )
 })
 

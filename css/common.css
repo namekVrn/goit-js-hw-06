@@ -29,7 +29,12 @@ button {
   flex-wrap: wrap;
 }
 .img__width{
-  width: 300px;
+  width: 250px;
+  height: 200px;
   padding: 10px;
-  background-color: ;
+ 
+}
+.list{
+  list-style: none;
+  
 }
