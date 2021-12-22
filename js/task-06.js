@@ -1,4 +1,4 @@
-const inputValue = document.querySelector('input[data-length="6"]')
+const inputValue = document.querySelector('#validation-input')
 inputValue.addEventListener('blur', onChecklength)
 function onChecklength(event){
    

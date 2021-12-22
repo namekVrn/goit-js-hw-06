@@ -61,3 +61,12 @@
 // function onLinerCheck(event){
 //    href.btn.disabled = !event.currentTarget.checked;
 // }
+
+// function slugify(title) {
+//     // Change code below this line
+  
+//   return title.toLowerCase().split(" ").join("-")
+  
+//     // Change code above this line
+//   }
+//   console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"))
