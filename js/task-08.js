@@ -12,14 +12,12 @@ function onFormSubmit(event){
     
     if( email === "" || password === ""){
         alert("Заполните все поля")
-    }
+    }else{
     const getForm = new FormData(event.currentTarget)
     getForm.forEach((password, key)=>{
         sendingServer[key] = password;
-        
     })
     formData.formBtn.reset()
-    console.log(sendingServer)
-
+    console.log(sendingServer)}
        
 }
