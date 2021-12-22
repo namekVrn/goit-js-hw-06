@@ -34,11 +34,39 @@ const images = [
 
 ];
 
-const elemGallery = document.querySelector('.gallery')
-elemGallery.classList.add('flex')
 
-const getList = images.map((value)=>{ 
-  const img = `<li class="list"><img class="img__width" src="${value.url}" alt="${value.alt}"></li>`             
-  elemGallery.insertAdjacentHTML('beforeend', img )
-})
+const galleryEl = document.querySelector('.gallery');
+const image = ({ url, alt }) => {
+  return `<li class="list"><img class="img__width" src = ${url} alt = '${alt}' width="320"></li>`;
+};
 
+const addImg = images.map(image).join('');
+console.log(addImg)
+galleryEl.insertAdjacentHTML('afterbegin', addImg);
+galleryEl.classList.add('flex')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const elemGallery = document.querySelector('.gallery')
+// elemGallery.classList.add('flex')
+// const mass = [{}]
+// const getList = images.map((value)=>{ 
+//   mass.push(value.url, value.alt)
+  
+// })
+// const img = `<li class="list"><img class="img__width" src="${mass.url}" alt="${mass.alt}"></li>`             
+//   elemGallery.insertAdjacentHTML('beforeend', img )
+// console.log(mass)
