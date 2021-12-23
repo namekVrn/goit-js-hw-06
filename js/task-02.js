@@ -9,8 +9,10 @@ const ingredients = [
 const elem = document.querySelector('ul#ingredients')
  // Новый способ черч map
 const list = ingredients.map((value)=>{    
-  const test = `<li>${value}</li>`;
-  elem.insertAdjacentHTML('beforeend',test )
+  const newElem = document.createElement('li')
+    newElem.textContent = value
+    newElem.classList.add('item')
+    elem.append(newElem)
   
 })
 
