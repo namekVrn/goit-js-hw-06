@@ -12,9 +12,11 @@ const list = ingredients.map((value)=>{
   const newElem = document.createElement('li')
     newElem.textContent = value
     newElem.classList.add('item')
-    elem.append(newElem)
-  
+    return newElem
 })
+console.log(list)
+elem.append(...list)
+
 
 //Старый способ через for :)
 // for(let i = 0; i < ingredients.length -1; i+=1){ 
@@ -26,5 +28,5 @@ const list = ingredients.map((value)=>{
 
 
 
-const planets = ["Земля", "Марс", "Венера", "Юпитер"];
-const result = planets.map((value, number)=>{return console.log(`${number}, ${value}`) })
+// const planets = ["Земля", "Марс", "Венера", "Юпитер"];
+// const result = planets.map((value, number)=>{return console.log(`${number}, ${value}`) })
